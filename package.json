@@ -1,0 +1,49 @@
+{
+  "name": "racetracks",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@chakra-ui/icons": "^2.0.0",
+    "@chakra-ui/react": "^2.0.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mdi/font": "^6.6.96",
+    "@mdi/js": "^6.6.96",
+    "@mdi/react": "^1.5.0",
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.3.3",
+    "graphql": "^16.3.0",
+    "next": "12.1.4",
+    "next-translate": "^1.4.0",
+    "nookies": "^2.5.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "strapi-sdk-js": "^2.2.0",
+    "swiper": "^8.1.1",
+    "weak-key": "^1.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@lingui/cli": "^3.13.2",
+    "@lingui/loader": "^3.13.2",
+    "@lingui/macro": "^3.13.2",
+    "@types/node": "17.0.23",
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "babel-plugin-macros": "^3.1.0",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.4",
+    "sass": "^1.50.0",
+    "typescript": "4.6.3"
+  }
+}

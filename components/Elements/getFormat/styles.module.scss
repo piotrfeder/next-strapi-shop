@@ -1,0 +1,29 @@
+.format {
+  &__Item {
+    height: 40px;
+    display: inline-flex;
+    margin: 0 12px;
+    padding: 4px 14px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid #39add2;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  &__ItemActive {
+    background-color: #39add2;
+    color: #000;
+    height: 40px;
+    display: inline-flex;
+    margin: 0 12px;
+    padding: 4px 14px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid #39add2;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

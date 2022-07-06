@@ -1,0 +1,16 @@
+.userarea {
+  display: inline-flex;
+  flex: 1 0 auto;
+  margin-right: 15px;
+  .register {
+    display:inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items:center;
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0 15px;
+  }
+}

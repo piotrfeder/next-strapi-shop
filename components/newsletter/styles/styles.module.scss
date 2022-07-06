@@ -1,0 +1,130 @@
+@import '../../../styles/main.scss';
+
+.newsletter {
+  width: 100%;
+  display:block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  &__container {
+    width: calc(1170px + 48px);
+    display: flex;
+    margin: 0 auto;
+    background-color: $whiteColor;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 50px;
+    &__left {
+      width: 50%;
+      display: inline-flex;
+      flex-flow: row wrap;
+    }
+    &__right {
+      width: 50%;
+      display: inline-flex;
+      form {
+        width: 100%;
+        display: inline-flex;
+        flex-flow: row wrap;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 27px;
+    color: $orangeColor;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: letSpa(18,40);
+    color: $blackColor;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.button {
+  &__orange {
+    background-color: $orangeColor;
+    color: $whiteColor;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: letSpa(12, 40);
+    text-transform: uppercase;
+    padding: 0 20px;
+    height: 52px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 0;
+    cursor: pointer;
+    flex: 0 1 auto;
+  }
+}
+
+.input {
+  height: 52px;
+  font-size: 12px;
+  color: $blackColor;
+  display: inline-flex;
+  border: 0;
+  padding: 0 12px;
+  border: 0;
+  outline: none;
+  font-family: $fontPoppins;
+  flex: 1 0 auto;
+  background-color: $silverLightColor;
+  flex: 1 0 auto;
+}
+
+.checkbox__container {
+  width: 100%;
+  display:flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 20px;
+  &__input {
+    width: 14px;
+    height: 14px;
+    position :relative;
+    margin-right: 10px;
+    input {
+      width: 14px;
+      height: 14px;
+      border: $orangeColor;
+      background-color: $silverLightColor;
+      &:checked {
+        label {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    label {
+      width: 6px;
+      height: 10px;
+      border-left: 1px solid $orangeColor;
+      border-bottom: 1px solid $orangeColor;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__text {
+    width: calc(100% - 24px);
+    font-size: 12px;
+    color: $blackColor;
+    line-height: 1.2;
+    margin-top: 4px;
+  }
+}

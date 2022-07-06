@@ -1,0 +1,69 @@
+@import '../../../styles//main.scss';
+.mainslide {
+  width: 100%;
+  display:flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  height: 100%;
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content:center;
+    padding-right: 20px;
+    width: 50%;
+    &__title {
+      width: 100%;
+      margin-bottom: 40px;
+      p {
+        font-size: 60px;
+        line-height: 1.2;
+        @media screen and (max-width: 1280px) {
+          font-size: setVw(60, 1280);
+        }
+      }
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 20px;
+      p {
+        font-size: 22px;
+        line-height : 1.4;
+        font-weight: 300;
+        @media screen and (max-width: 1280px) {
+          font-size: setVw(22,1280);
+        }
+      }
+    }
+    &__button {
+      a {
+        display: inline-flex;
+        background-color: $orangeColor;
+        color: $whiteColor;
+        border-radius: 4px;
+        padding: 8px 20px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-right: 20px;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    img {
+      object-fit: contain;
+    }
+  }
+  &__image {
+    width: 80%;
+    height: 80%;
+    position: relative;
+  }
+}

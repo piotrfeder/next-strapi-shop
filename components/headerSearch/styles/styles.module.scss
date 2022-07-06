@@ -1,0 +1,44 @@
+@import '../../../styles/main.scss';
+
+.headersearch {
+  display:flex;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 15px;
+
+  &__container {
+    border: 1px solid $silverColor;
+    border-radius: 10px;
+    height:40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow:hidden;
+    width: 100%;
+  }
+  &__input {
+    height :40px;
+    font-size: 12px;
+    color: $blackColor;
+    display: inline-flex;
+    border: 0;
+    padding: 0 12px;
+    border: 0;
+    outline: none;
+    font-family: $fontPoppins;
+    flex: 1 0 auto;
+    width: calc(100% - 40px);
+  }
+  &__button {
+    background-image: url('../image/icon-search.svg');
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    appearance: none;
+    border: 0;
+    background-color: $orangeColor;
+    cursor: pointer;
+  }
+}

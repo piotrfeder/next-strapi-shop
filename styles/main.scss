@@ -1,0 +1,21 @@
+$orangeColor: #f1553b;
+$whiteColor: #ffffff;
+$silverColor: #cbcbcb;
+$blackColor: #000;
+$silverLightColor: #f5f5f5;
+
+$fontPoppins: 'Poppins', sans-serif;
+
+@function letSpa($ls, $fontSize) {
+  @return (($ls * $fontSize)/1000) * 1px;
+  }
+
+@function setVw($fontSize, $vwith) {
+  $vw-context: $vwith * 0.01 * 1;
+  @return $fontSize / $vw-context * 1vw;
+}
+@function setVh($size, $vheight) {
+  $vh-context: $vheight * 0.01 * 1;
+  @return $size / $vh-context * 1vh;
+}
+

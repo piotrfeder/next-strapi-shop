@@ -1,0 +1,19 @@
+@import '../../../styles//main.scss';
+.slider {
+  &__container {
+    height: 60vh;
+    width: 100%;
+    flex-flow: row wrap;
+    position: relative;
+    &:after {
+      content: '';
+      height: 100%;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: $whiteColor;
+    }
+  }
+}

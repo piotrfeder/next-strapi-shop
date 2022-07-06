@@ -1,0 +1,32 @@
+@import '../../../styles/main.scss';
+
+.header {
+  filter: drop-shadow(0 6px 27px rgba(0,0,0,.2));
+  &__basket {
+    background-image: url('../images/icon-basket.png');
+    width: 32px;
+    height :32px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    flex: 1 0 auto;
+  }
+
+  &__items {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 11px;
+    color: $whiteColor;
+    background-color: $orangeColor;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 100%;
+
+  }
+}

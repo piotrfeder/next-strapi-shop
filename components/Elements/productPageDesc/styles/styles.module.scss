@@ -1,0 +1,20 @@
+.productDesc {
+  &__container {
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+  }
+  &__title {
+    width: 100%;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  &__description {
+    font-size: 18px;
+    line-height: 28px;
+    text-align:left;
+    color: #999999;
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../../styles/main.scss';
+
+.product {
+  &__container {
+    background-color: $whiteColor;
+    padding: 30px 38px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px;
+    width: calc(25% - 30px);
+    flex-flow: row wrap;
+    transition: filter .3s ease-in-out;
+    &:hover {
+      filter: drop-shadow(0 0 20px #cdcdcd);
+    }
+  }
+  &__title_box {
+    display:flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  &__basket_icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+  &__price {
+    font-size: 14px;
+    line-height: 34px;
+    opacity: 0.6;
+    flex: 1 0 auto;
+    &_box {
+      display:flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+  }
+  &__image {
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+    img {
+      object-fit: contain;
+    }
+  }
+  &__add_fav {
+    display:flex;
+    width: 24px;
+    height: 24px;
+  }
+  
+}
